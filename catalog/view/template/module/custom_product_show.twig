@@ -1,0 +1,9 @@
+{% for product in products %}
+    <p> product ID:             {{product.product_id}}  </p>
+    <p> product Name:           {{product.name}}         </p>
+    <p> product Alt:            {{product.alt}}          </p>
+    <p> product Price:          {{ product.price }}     </p>
+    <p> product Link:           <a href="{{product.href}}"> link </a> </p>
+    <p> product Thumb:          <img width="40" height="40px" src="{{product.thumb}}" alt="{{product.alt}}" /> </p>
+    <hr>
+{% endfor %}
